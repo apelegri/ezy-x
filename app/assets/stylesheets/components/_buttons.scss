@@ -1,0 +1,12 @@
+.btn-footer {
+  background: $black;
+  color: $white;
+  border: 1px solid $white;
+  font-weight: lighter;
+  height: 36px;
+}
+.btn-footer:hover {
+  border: 1px solid $white;
+  color: $black;
+  background: $white;
+}

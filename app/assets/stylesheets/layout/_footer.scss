@@ -1,1 +1,31 @@
-// Your footer style
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 119px;
+  border-top: 1px solid $light-grey;
+  background: $black;
+}
+
+.footer-social-link {
+  margin-left: 30px;
+  padding-top: 22px;
+}
+
+.footer-newsletter {
+  margin-right: 30px;
+  input:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  input:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+}
+.fa {
+  color: $white;
+  font-size: 27px;
+}
+
+.fa:hover {
+  color: $light-grey;
+}
