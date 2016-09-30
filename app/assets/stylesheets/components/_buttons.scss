@@ -11,18 +11,29 @@
   background: $white;
 }
 
+// Btn-home and fa fa arrow positionning
 .btn-home {
-    font-size: 27px;
-    color: #FFFFFF;
-    background-color: rgba(9, 9, 9, 0.8);
-    text-decoration: none !important;
-    text-align: left;
-    float: left;
-    padding: 19px 20px 19px 20px;
-    width: 340px;
-    height: 75px;
+  font-size: 27px;
+  color: #FFFFFF;
+  background-color: rgba(9, 9, 9, 0.8);
+  text-decoration: none !important;
+  text-align: left;
+  float: left;
+  padding: 19px 20px;
+  width: 340px;
+  height: 75px;
 }
 .btn-home:hover {
   border: white 1px solid;
   color: $white;
+}
+.position-1{
+  position: relative;
+  bottom: 48px;
+  left: 140px;
+}
+.position-2 {
+  position: relative;
+  bottom: 48px;
+  left: 140px;
 }
