@@ -6,9 +6,10 @@
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid $light-grey;
 
 //   background-color: transparent;
-//   background: -webkit-linear-gradient(bottom, rgba(9,9,9,0), rgba(9,9,9,1)); /* For Safari 5.1 to 6.0 */
+//   background: -webkit-linear-gradient(bottom, c, rgba(9,9,9,1)); /* For Safari 5.1 to 6.0 */
 //   background: -o-linear-gradient(bottom, rgba(9,9,9,0), rgba(9,9,9,1)); /* For Opera 11.1 to 12.0 */
 //   background: -moz-linear-gradient(bottom, rgba(9,9,9,0), rgba(9,9,9,1)); /* For Firefox 3.6 to 15 */
 //   background: linear-gradient(bottom, rgba(9,9,9,0), rgba(9,9,9,1)); /* Standard syntax (must be last) */

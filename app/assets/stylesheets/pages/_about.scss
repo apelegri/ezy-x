@@ -1,10 +1,34 @@
-.card h1 {
-  text-align: center;
-}
-.card {
-  margin-top: 20px;
+.background-box {
+  margin: 0 auto;
+  float: none;
   background: $light-grey;
-  padding: 20px;
-  margin-bottom: 20px;
   border-radius: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.profil-info {
+  position: relative;
+  bottom: 14px;
+  left: 25px;
+  width: 200px;
+}
+.profil-info a {
+  text-decoration: none;
+  color: $black;
+}
+.profil-info a:hover {
+  text-decoration: underline;
+}
+
+.lk-fa-about {
+  font-size: 20px;
+}
+
+.profil-box {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
