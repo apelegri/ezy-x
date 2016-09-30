@@ -1,0 +1,18 @@
+.flat-card {
+  display: flex;
+  align-items: center;
+  background: $white;
+  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+}
+.flat-pic {
+  height: 200px;
+  background-size: cover !important;
+  width: 400px;
+  background-position: center;
+}
+.flat-info {
+  padding-left: 10px;
+  width: 100%;
+  text-align: left;
+}
+
