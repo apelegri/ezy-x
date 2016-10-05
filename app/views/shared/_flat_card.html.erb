@@ -1,24 +1,26 @@
 <% @flats.each do |flat| %>
-<div class="flat-card">
-  <div class="flat-pic" style="background-image: url(<%= image_path 'about_pic.jpg' %>);"></div>
-  <strong><h3 class="flat-title"><%= flat.property_type %></h3></strong>
-  <p class="flat-price"><%= flat.price %> €</p>
-  <p class="flat-description"><%= flat.description %> </p>
-  <ul class="list-inline text-center flat-list">
-    <li>
-      <p><%= flat.room_number %></p>
-      <strong><p>Chambres</p></strong>
-    </li>
-    <li>
-      <p><%= flat.square_meters %></p>
-      <strong><p>Mètres Carrés</p></strong>
-    </li>
-    <li>
-      <p><%= flat.pieces_number %></p>
-      <strong><p>Pièces</p></strong>
-    </li>
-  </ul>
-</div>
+  <%= link_to flat_path(flat), class:'card-link-default' do%>
+    <div class="flat-card">
+      <div class="flat-pic" style="background-image: url(<%= image_path 'about_pic.jpg' %>);"></div>
+      <strong><h3 class="flat-title"><%= flat.property_type %></h3></strong>
+      <p class="flat-price"><%= flat.price %> €</p>
+      <p class="flat-description"><%= flat.description %> </p>
+      <ul class="list-inline text-center flat-list">
+        <li>
+          <p><%= flat.room_number %></p>
+          <strong><p>Chambres</p></strong>
+        </li>
+        <li>
+          <p><%= flat.square_meters %></p>
+          <strong><p>Mètres Carrés</p></strong>
+        </li>
+        <li>
+          <p><%= flat.pieces_number %></p>
+          <strong><p>Pièces</p></strong>
+        </li>
+      </ul>
+    </div>
+  <% end %>
 <% end %>
 
 

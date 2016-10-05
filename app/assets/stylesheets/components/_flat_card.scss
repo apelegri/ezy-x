@@ -44,3 +44,11 @@
 .list-inline {
   margin-left: 0px;
 }
+.card-link-default {
+  color: $grey-on-white;
+}
+.card-link-default:hover {
+  color: $grey-on-white;
+  text-decoration: none;
+}
+
