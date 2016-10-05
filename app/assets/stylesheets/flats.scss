@@ -1,3 +1,4 @@
+// CSS pour l'index de flat
 .cards-header {
   margin-bottom: 30px;
   text-align: center;
@@ -18,4 +19,24 @@
   color: $light-grey;
   font-weight: bold;
   text-decoration: underline;
+}
+
+// CSS pour la show de flat
+.general-information {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CAC7C7 ;
+  height: 80px;
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+  -moz-box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+  box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+}
+.general-information h3 {
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.sub-navbar {
+  padding-top: 11px;
+  padding-right: 16px;
 }
