@@ -1,5 +1,5 @@
 class Flat < ApplicationRecord
-  validates :name, presence:true
+  validates :type, presence:true
   validates :price, presence:true
   validates :room_number, presence:true
   validates :square_meters, presence:true
