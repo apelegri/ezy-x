@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161005080220) do
+ActiveRecord::Schema.define(version: 20161005081427) do
 
   create_table "flats", force: :cascade do |t|
-    t.string   "poperty_type"
+    t.string   "property_type"
     t.integer  "price"
     t.integer  "room_number"
     t.integer  "square_meters"
