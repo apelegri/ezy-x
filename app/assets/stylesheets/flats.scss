@@ -1,3 +1,21 @@
-// Place all the styles related to the flats controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.cards-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.above-background-box {
+  text-align: center;
+  color: #CAC7C7;
+  font-size: 19px;
+  margin-top: 45px;
+}
+.text-link {
+  text-decoration: none;
+  color: $white;
+  font-weight: bold
+}
+.text-link:hover {
+  text-decoration: none;
+  color: $light-grey;
+  font-weight: bold;
+  text-decoration: underline;
+}
