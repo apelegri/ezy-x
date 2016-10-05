@@ -1,18 +1,44 @@
 .flat-card {
-  display: flex;
-  align-items: center;
+  position: relative;
   background: $white;
   box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+  border-radius: 2px;
 }
 .flat-pic {
   height: 200px;
   background-size: cover !important;
-  width: 400px;
+  width: 250px;
   background-position: center;
+  border-radius: 2px 0 0 2px;
 }
-.flat-info {
-  padding-left: 10px;
-  width: 100%;
-  text-align: left;
+.flat-title {
+  position: absolute;
+  left: 270px;
+  bottom: 140px
+}
+.flat-price {
+  position: absolute;
+  bottom: 135px;
+  right: 28px;
+  font-size: 25px;
+}
+.flat-description {
+  position: absolute;
+  top: 70px;
+  left: 290px;
+  font-weight: lighter;
 }
 
+.flat-list {
+  position: absolute;
+  left: 415px;
+  top: 130px;
+}
+.flat-list li {
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+.list-inline {
+  margin-left: 0px;
+}

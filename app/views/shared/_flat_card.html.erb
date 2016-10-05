@@ -2,14 +2,30 @@
   <div class="col-xs-12  col-sm-12 col-md-12">
   <h4><%= @flats.count%> Biens Immonibliers</h4>
     <div class="flat-card">
-      <div class="flat-pic" style="background-image: url(<%= image_path 'about_pic.jpg' %>);"></div>
-      <div class="flat-info">
+      <div class="flat-pic" style="background-image: url(<%= image_path 'about_pic.jpg' %>);">
+
         <div>
           <% @flats.each do |flat| %>
-            <h2><%= flat.property_type %></h2>
+            <strong><h3 class="flat-title"><%= flat.property_type %></h3></strong>
+            <p class="flat-price"><%= flat.price %> €</p>
+            <p class="flat-description"><%= flat.description %> </p>
+            <ul class="list-inline text-center flat-list">
+              <li>
+                <p><%= flat.room_number %></p>
+                <strong><p>Chambres</p></strong>
+              </li>
+              <li>
+                <p><%= flat.square_meters %></p>
+                <strong><p>Mètres Carrés</p></strong>
+              </li>
+              <li>
+                <p><%= flat.pieces_number %></p>
+                <strong><p>Pièces</p></strong>
+              </li>
+            </ul>
           <% end %>
         </div>
-      </div>
+
     </div>
   </div>
 </div>
