@@ -63,6 +63,7 @@ GEM
       sass (>= 3.2)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     i18n (0.7.0)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -111,6 +112,7 @@ GEM
       rails-assets-requirejs-text (~> 2.0.12)
     rails-assets-requirejs (2.1.22)
     rails-assets-requirejs-text (2.0.15)
+    rails-assets-underscore (1.8.3)
     rails-dom-testing (2.0.1)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
@@ -176,12 +178,14 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   font-awesome-sass
+  gmaps4rails
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-assets-plugin!
+  rails-assets-underscore!
   sass-rails (~> 5.0)
   simple_form
   spring
