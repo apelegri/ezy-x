@@ -1,35 +1,101 @@
 <div class="container">
   <div class="row background-box" style="padding-top: 0px">
-    <div class="general-information">
-      <h3><%= @flat.property_type %></h3>
-      <ul class="list-inline text-center sub-navbar">
-        <li>
-          <strong><p><%= @flat.room_number %></p></strong>
-          <strong><p>Chambres</p></strong>
-        </li>
-        <li>
-          <strong><p><%= @flat.square_meters %></p></strong>
-          <strong><p>Mètres Carrés</p></strong>
-        </li>
-        <li>
-          <strong><p><%= @flat.pieces_number %></p></strong>
-          <strong><p>Pièces</p></strong>
-        </li>
-      </ul>
+    <div class="sub-navbar">
+      <div class="col-xs-12 text-center col-md-6 ">
+        <h3><%= @flat.property_type %></h3>
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="flexbox-position">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="flat-pic-show" style="background-image: url(<%= image_path 'about_pic.jpg' %>);"></div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="border-box" style="padding: 0px">
+            <div class="subtitle-border">
+              <h4>Description</h4> <h4><%= @flat.price %> €</h4>
+            </div>
+            <div class="characteristics">
+              <p>C'est un bien de <%= @flat.square_meters %> mètres carrés avec <%= @flat.pieces_number %> pièces et <%= @flat.room_number %> chambres.  </p><br>
+              <div class="row">
+                <div class="col-xs-6 box-characteristics text-position">
+                  <p><%= @flat.bathroom %></p>
+                  <p><%= @flat.wc %></p>
+                  <p><%= @flat.terrace %></p>
+                </div>
+                <div class="col-xs-6 text-position">
+                  <p><%= @flat.heating %></p>
+                  <p><%= @flat.floor %></p>
+                  <p><%= @flat.cellar %></p>
+                </div>
+              </div><br>
+              <p><%= @flat.around_description %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flat-opinion">
+      <div class="border-box" style="padding: 0px">
+        <div class="subtitle-border">
+          <h4>Notre Avis</h4>
+        </div>
+        <div class="text-opinion text-justify">
+          <p><%= @flat.opinion %></p>
+        </div>
+      </div>
     </div>
 
-    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-      <div class="flat-description">
+    <div class="border-box" style="padding: 0px">
+        <div class="subtitle-border">
+          <h4>Environnement</h4>
+        </div>
+        <div class="row">
+          <div class="flexbox-position">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="text-info">
+                <h4>Transports</h4>
+                <p><%= @flat.metro %></p>
+                <p><%= @flat.bus %></p><br>
+                <h4>Ecoles</h4>
+                <p><%= @flat.school %></p><br>
+                <h4>Commerces</h4>
+                <p><%= @flat.shop %></p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="map-position">
+                <div id="map" style="width: 100%; height: 400px;"></div>
 
+                <% content_for(:after_js) do %>
+                  <%= javascript_tag do %>
+                    $(document).ready(function() {
+                      var handler = Gmaps.build('Google');
+                      handler.buildMap({ internal: { id: 'map' } }, function() {
+                        markers = handler.addMarkers(<%= raw @hash.to_json %>);
+                        handler.bounds.extendWith(markers);
+                        handler.fitMapToBounds();
+                        if (markers.length == 0) {
+                          handler.getMap().setZoom(2);
+                        } else if (markers.length == 1) {
+                          handler.getMap().setZoom(14);
+                        }
+                      });
+                    });
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div><br><br><br>
+
+    <div class="text-center">
+      <div class="col-xs-12 col-sm-6 call-to-action">
+      <%= link_to "JE VISITE", contact_path, class:"pages-cta" %>
       </div>
-      <div class="flat-opinion">
-
-      </div>
-      <div class="environment">
-
-      </div>
-      <div class="call-to-action">
-
+      <div class="col-xs-12 col-sm-6 call-to-action">
+      <%= link_to "RETOUR", flats_path, class:"pages-cta-light" %>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161005131750) do
+ActiveRecord::Schema.define(version: 20161007132418) do
 
   create_table "flats", force: :cascade do |t|
     t.string   "property_type"
@@ -20,14 +20,24 @@ ActiveRecord::Schema.define(version: 20161005131750) do
     t.integer  "pieces_number"
     t.string   "description"
     t.string   "opinion"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.integer  "bathroom"
-    t.integer  "wc"
-    t.integer  "floor"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "bathroom"
+    t.string   "wc"
+    t.string   "floor"
     t.string   "terrace"
     t.string   "cellar"
     t.string   "transports"
+    t.string   "around_description"
+    t.string   "environment"
+    t.string   "heating"
+    t.string   "bus"
+    t.string   "metro"
+    t.string   "school"
+    t.string   "shop"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
   end
 
 end
