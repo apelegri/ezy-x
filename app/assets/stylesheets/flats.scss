@@ -69,6 +69,12 @@
 .text-opinion {
   padding: 17px 15px 0 15px;
 }
+
+// Environment
+.flexbox-position {
+  display: flex;
+  align-items: center;
+}
 .text-info {
   padding: 17px 15px 0 15px;
   color: $black;
@@ -77,12 +83,16 @@
   font-weight: lighter;
   line-height: 10px;
 }
-
+// Map
+.map-position {
+  padding: 17px 15px 0 15px;
+}
 // Call-to-Action
 .call-to-action {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
 }
+
 
 
