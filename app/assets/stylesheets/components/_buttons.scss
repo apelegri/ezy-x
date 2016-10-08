@@ -1,3 +1,7 @@
+.btn-footer:focus,.btn-footer:active,.btn-home:focus,.btn-home:active,.pages-cta:focus,.pages-cta:active {
+  outline: none !important;
+}
+
 .btn-footer {
   background: $black;
   color: $white;
@@ -56,9 +60,9 @@
   color: $white;
   border: 1px solid $black;
   border-radius: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: lighter;
-  padding: 5px 40px;
+  padding: 5px 46px;
 }
 .pages-cta:hover {
   background-color: transparent;
@@ -66,8 +70,8 @@
   color: $black;
   border: 1px solid $black;
   border-radius: 30px;
-  font-size: 25px;
-  padding: 5px 40px;
+  font-size: 20px;
+  padding: 5px 46px;
 }
 .pages-cta-light {
   background-color: transparent;
@@ -76,8 +80,8 @@
   border: 1px solid $black;
   border-radius: 30px;
   font-size: 25px;
-  font-weight: lighter;
-  padding: 5px 40px;
+  font-size: 20px;
+  padding: 5px 46px;
 }
 .pages-cta-light:hover {
   text-decoration: none;
@@ -86,8 +90,8 @@
   border: 1px solid $black;
   border-radius: 30px;
   font-size: 25px;
-  font-weight: lighter;
-  padding: 5px 40px;
+  font-size: 20px;
+  padding: 5px 46px;
 }
 
 .pages-cta-light-form {

@@ -71,17 +71,14 @@
 }
 
 // Environment
-.flexbox-position {
-  display: flex;
-  align-items: center;
-}
+
 .text-info {
   padding: 17px 15px 0 15px;
   color: $black;
 }
 .text-info p {
   font-weight: lighter;
-  line-height: 10px;
+  line-height: 15px;
 }
 // Map
 .map-position {
