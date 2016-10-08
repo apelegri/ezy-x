@@ -89,3 +89,26 @@
   font-weight: lighter;
   padding: 5px 40px;
 }
+
+.pages-cta-light-form {
+  background-color: transparent;
+  text-decoration: none;
+  color: #080808;
+  border: 1px solid #080808;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 5px 48px;
+}
+.pages-cta-light-form:hover {
+  text-decoration: none;
+  background-color: $black;
+  color: $white;
+  border: 1px solid $black;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.pages-cta-light-form:focus,.pages-cta-light-form:active {
+  outline: none !important;
+}
