@@ -9,13 +9,6 @@
   padding-bottom: 25px;
   box-shadow: 0px 2px 20px 0px rgba(237,237,237,0.7);
 }
-
-.profil-info {
-  position: relative;
-  bottom: 3px;
-  left: 10px;
-  width: 200px;
-}
 .profil-info a {
   text-decoration: none;
   color: $black;
@@ -23,13 +16,20 @@
 .profil-info a:hover {
   text-decoration: underline;
 }
-
 .lk-fa-about {
   font-size: 20px;
 }
-
-.profil-box {
-  padding: 10px;
+.person-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px auto;
+}
+.avatar-box {
   display: flex;
   justify-content: space-around;
 }
+.info-box {
+  display: flex;
+  justify-content: space-around;
+}
+
