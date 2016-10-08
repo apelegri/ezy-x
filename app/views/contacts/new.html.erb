@@ -1,22 +1,25 @@
 <div class="container">
-  <div class="row background-box">
-    <div class="background-box col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1  ">
+<div class="row col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 background-box">
+  <div class="row ">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
       <div align="center">
-        <h3>Send A message to Us</h3>
+        <h3>Envoyé nous un message</h3>
+        <p>Nous vous contacterons au plus vite.</p>
 
         <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-          <%= f.input :name, :required => true %>
-          <%= f.input :email, :required => true %>
-          <%= f.input :message, :as => :text, :required => true %>
+          <%= f.input :name, placeholder: "José Beauvais...", label: false, :required => true %>
+          <%= f.input :email, placeholder: "Votre email...", label: false, :required => true %>
+          <%= f.input :message, :as => :text, placeholder: "Je cherche un appartement lumineux dans le 3ième arrondissement...", label: false,:required => true %>
           <div class= "hidden">
             <%= f.input :nickname, :hint => 'Leave this field blank!' %>
           </div>
           <div>
             </br>
-            <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+            <%= f.button :submit, 'ENVOYER', :class=> "pages-cta-light-form" %>
           </div>
         <% end %>
       </div>
     </div>
   </div>
+</div>
 </div>
