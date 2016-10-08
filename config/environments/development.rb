@@ -26,8 +26,24 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  #ADRIEN added
+ # Tuto ask to add a line
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Allow to hide information on open source project
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV["GMAIL_DOMAIN"],
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
+  }
+  ##############################################################################
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 

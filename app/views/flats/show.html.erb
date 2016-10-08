@@ -68,7 +68,7 @@
                 <div id="map" style="width: 100%; height: 400px;"></div>
 
                 <% content_for(:after_js) do %>
-                  <%= javascript_tag do %>
+                  <script>
                     $(document).ready(function() {
                       var handler = Gmaps.build('Google');
                       handler.buildMap({ internal: { id: 'map' } }, function() {
@@ -82,7 +82,7 @@
                         }
                       });
                     });
-                  <% end %>
+                  </script>
                 <% end %>
               </div>
             </div>
@@ -92,7 +92,7 @@
 
     <div class="text-center">
       <div class="col-xs-12 col-sm-6 call-to-action">
-      <%= link_to "JE VISITE", contact_path, class:"pages-cta" %>
+      <%= link_to "JE VISITE", contacts_path, class:"pages-cta" %>
       </div>
       <div class="col-xs-12 col-sm-6 call-to-action">
       <%= link_to "RETOUR", flats_path, class:"pages-cta-light" %>
