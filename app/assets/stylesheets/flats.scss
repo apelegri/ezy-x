@@ -58,11 +58,11 @@
 .characteristics {
   padding: 17px 15px 0 15px;
 }
-.box-characteristics {
-  border-right: 0.5px dashed $black;
-}
-.text-position p {
-  margin-left: 60px;
+.label-tag li {
+  background-color: rgba(9, 9, 9, 0.8);
+  padding: 3px;
+  color: $white;
+  margin-bottom: 4px;
 }
 
 // Opinion

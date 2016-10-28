@@ -17,15 +17,15 @@
           <div class="characteristics">
             <p>C'est un bien de <%= @flat.square_meters %> mètres carrés avec <%= @flat.pieces_number %> pièces et <%= @flat.room_number %> chambres.  </p><br>
             <div class="row">
-              <div class="col-xs-6 box-characteristics text-position">
-                <p><%= @flat.bathroom %></p>
-                <p><%= @flat.wc %></p>
-                <p><%= @flat.terrace %></p>
-              </div>
-              <div class="col-xs-6 text-position">
-                <p><%= @flat.heating %></p>
-                <p><%= @flat.floor %></p>
-                <p><%= @flat.cellar %></p>
+              <div class="col-xs-12 label-tag">
+                <ul class="list-inline">
+                  <li><%= @flat.bathroom %></li>
+                  <li> <%= @flat.wc %></li>
+                  <li><%= @flat.terrace %></li>
+                  <li><%= @flat.heating %></li>
+                  <li><%= @flat.floor %></li>
+                  <li><%= @flat.cellar %></li>
+                </ul>
               </div>
             </div><br>
             <p><%= @flat.around_description %></p>
