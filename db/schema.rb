@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20161008063902) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "contacts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,11 +38,12 @@ ActiveRecord::Schema.define(version: 20161008063902) do
     t.string   "transports"
     t.string   "around_description"
     t.string   "environment"
+    t.string   "transport"
+    t.string   "school"
+    t.string   "shop"
     t.string   "heating"
     t.string   "bus"
     t.string   "metro"
-    t.string   "school"
-    t.string   "shop"
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
