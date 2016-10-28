@@ -7,7 +7,10 @@
   color: $white;
   border: 1px solid $white;
   font-weight: lighter;
-  height: 36px;
+  height: 33px;
+}
+input[type=submit] {
+  -webkit-appearance: none;
 }
 .btn-footer:hover {
   border: 1px solid $white;

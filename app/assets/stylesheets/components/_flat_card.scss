@@ -5,40 +5,43 @@
   border-radius: 2px;
   margin-bottom: 20px;
   margin-top: 20px;
+  height: 200px;
 }
 .flat-pic {
+  vertical-align: middle;
   height: 200px;
   background-size: cover !important;
-  width: 250px;
+  width: 300px;
   background-position: center;
   border-radius: 2px 0 0 2px;
 }
-.flat-title {
-  position: absolute;
-  left: 270px;
-  bottom: 140px
+.padding-pic {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.type-title {
+  border-bottom: 1px solid $light-grey;
 }
 .flat-price {
   position: absolute;
-  bottom: 135px;
+  top: 13px;
   right: 28px;
   font-size: 25px;
 }
 .flat-description {
   position: absolute;
   top: 70px;
-  left: 290px;
   font-weight: lighter;
 }
 
 .flat-list {
   position: absolute;
-  left: 415px;
+  left: 150px;
   top: 130px;
 }
 .flat-list li {
-  padding-right: 50px;
-  padding-left: 0px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .list-inline {
@@ -50,5 +53,8 @@
 .card-link-default:hover {
   color: $grey-on-white;
   text-decoration: none;
+}
+.dp-content {
+  display: block;
 }
 
