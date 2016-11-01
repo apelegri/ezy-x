@@ -1,14 +1,78 @@
-<div class="banner" style="background-image: url(<%= image_path 'home_pic.jpg' %>);">
+<!-- <div class="banner" style="background-image: url(<%#= image_path 'home_pic.jpg' %>);">
   <div class="banner-content">
     <ul>
-      <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
+      <li><%#= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
       <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
 
-      <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
+      <li><%#= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
       <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
 
-      <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
+      <li><%#= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
       <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
     </ul>
+  </div>
+</div> -->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("home_pic.jpg", :alt => "home-pic") %>
+      <div class="carousel-caption">
+        <div class="banner-content">
+          <ul>
+            <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
+            <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
+
+            <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
+
+            <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("home-chair.jpg", :alt => "home-chair") %>
+      <div class="carousel-caption">
+        <div class="banner-content">
+          <ul>
+            <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
+            <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
+
+            <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
+
+            <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("home-salon.jpg", :alt => "home-salon") %>
+      <div class="carousel-caption">
+        <div class="banner-content">
+          <ul>
+            <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
+            <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
+
+            <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
+
+            <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
+            <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
