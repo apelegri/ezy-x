@@ -3,11 +3,12 @@
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
         <div align="center">
-          <h3 style="font-weight: bold">Votre Message</h3>
+          <h3 style="font-weight: bold">VOTRE MESSAGE</h3>
           <p style="margin-bottom: 40px;">Nous vous contacterons au plus vite.</p><br>
           <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
             <%= f.input :name,placeholder: "José Beauvais...", label: false, :required => true %>
             <%= f.input :email,placeholder: "josébeauvais@gmail.com...", label: false, :required => true %>
+            <%#= f.select ['Demande de visite', 'Je veux être le premier au courant']%>
             <p style="font-weight: bold; text-align: left">Message:</p>
             <%= f.input :message, :as => :text, placeholder: "Recherche un appartement dans le 3ième avec vue sur parc...", label: false, :required => true %>
             <div class= "hidden">
