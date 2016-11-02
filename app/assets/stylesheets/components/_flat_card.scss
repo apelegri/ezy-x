@@ -133,6 +133,10 @@
   .above-background-box {
     font-size: 15px;
   }
+  .cards-header {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
 }
 @media screen and (max-width: 630px) and (min-width: 540px){
   .flat-card {
@@ -169,8 +173,15 @@
   .above-background-box {
     font-size: 15px;
   }
+  .cards-header {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .row.background-box {
+    margin-top: 32px;
+  }
 }
-@media screen and (max-width: 540px) and (min-width: 458px){
+@media screen and (max-width: 540px) and (min-width: 455px){
   .flat-card {
     height: 114px;
   }
@@ -201,6 +212,17 @@
   .flat-list {
     margin-left: -103px;
     margin-top: -49px;
+  }
+  .above-background-box {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .cards-header {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .row.background-box {
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 454px) and (min-width: 325px){
@@ -237,14 +259,13 @@
   }
   .above-background-box {
     font-size: 10px;
+    margin-top: 25px;
   }
   .cards-header {
     font-size: 10px;
+    margin-bottom: 9px;
   }
-  .background-box {
-    margin-top: 15px;
-  }
-  .cards-header {
-    margin-bottom: 5px;
+  .row.background-box {
+    margin-top: 32px;
   }
 }
