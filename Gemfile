@@ -38,6 +38,8 @@ gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
 gem 'mail_form'
+gem 'sendgrid-ruby'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-plugin'
 end
