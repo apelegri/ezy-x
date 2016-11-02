@@ -20,9 +20,12 @@
   </div>
   <div class="footer-newsletter hidden-xs hidden-sm">
     <label for="" style="color: white; font-weight: lighter;" >Souscrivez à la newsletter:</label>
-    <form class="form-inline">
-      <input type="email" placeholder="Email..." class="form-control">
+    <div class="form-inline">
+      <%#= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+       <%#= f.email_field :email,placeholder: "Email...", label: false, :required => true %>
+      <%#= f.submit 'Suivez-nous', class: "btn-footer" %>
       <input type="submit" value="Suivez-nous" class="btn-footer" style="border-radius: 0 5px 5px 0;">
-    </form>
+      <%# end %>
+    </div>
   </div>
 </div>
