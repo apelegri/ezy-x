@@ -14,16 +14,16 @@
         <p class="flat-description"><%= flat.description %> </p>
         <ul class="list-inline text-center flat-list">
           <li style="border-right:1px solid $light-grey;">
-            <p><%= flat.room_number %></p>
-            <strong><p>Chambres</p></strong>
+            <%= image_tag "bed.png", class:"bed-icon-size" %>
+            <strong><p><%= flat.room_number %> Chambres</p></strong>
           </li>
           <li style="border-right:1px solid $light-grey;">
-            <p><%= flat.square_meters %></p>
-            <strong><p>Mètres Carrés</p></strong>
+            <%= image_tag "ruler.png", class:"ruler-icon-size" %>
+            <strong><p><%= flat.square_meters %> Mètres Carrés</p></strong>
           </li>
           <li>
-            <p><%= flat.pieces_number %></p>
-            <strong><p>Pièces</p></strong>
+            <%= image_tag "door.png", class:"door-icon-size" %>
+            <strong><p><%= flat.pieces_number %> Pièces</p></strong>
           </li>
         </ul>
       </div>

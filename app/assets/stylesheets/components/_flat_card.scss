@@ -57,6 +57,18 @@
 .dp-content {
   display: block;
 }
+.door-icon-size {
+  height: 36px;
+  width: 52px;
+}
+.ruler-icon-size {
+  height: 29px;
+  width: 87px;
+}
+.bed-icon-size {
+  height: 31px;
+  width: 51px;
+}
 
 @media screen and (max-width:1200px) and (min-width: 994px){
   .flat-pic {
@@ -93,8 +105,8 @@
     top: 59px;
   }
   .flat-list {
-    margin-left: -64px;
-    margin-top: -6px;
+    margin-left: -78px;
+    margin-top: -12px;
   }
 }
 @media screen and (max-width: 726px) and (min-width: 630px){
@@ -127,8 +139,8 @@
     margin-top: -36px;
   }
   .flat-list {
-    margin-left: -60px;
-    margin-top: -38px;
+    margin-left: -65px;
+    margin-top: -41px;
   }
   .above-background-box {
     font-size: 15px;
@@ -136,6 +148,18 @@
   .cards-header {
     font-size: 13px;
     margin-bottom: 9px;
+  }
+  .door-icon-size {
+    height: 28px;
+    width: 44px;
+  }
+  .ruler-icon-size {
+    height: 23px;
+    width: 66px;
+  }
+  .bed-icon-size {
+    height: 25px;
+    width: 40px;
   }
 }
 @media screen and (max-width: 630px) and (min-width: 540px){
@@ -180,6 +204,18 @@
   .row.background-box {
     margin-top: 32px;
   }
+  .door-icon-size {
+    height: 24px;
+    width: 36px;
+  }
+  .ruler-icon-size {
+    height: 19px;
+    width: 50px;
+  }
+  .bed-icon-size {
+    height: 23px;
+    width: 36px;
+  }
 }
 @media screen and (max-width: 540px) and (min-width: 455px){
   .flat-card {
@@ -211,7 +247,7 @@
   }
   .flat-list {
     margin-left: -103px;
-    margin-top: -49px;
+    margin-top: -52px;
   }
   .above-background-box {
     font-size: 12px;
@@ -223,6 +259,18 @@
   }
   .row.background-box {
     margin-top: 32px;
+  }
+  .door-icon-size {
+    height: 21px;
+    width: 33px;
+  }
+  .ruler-icon-size {
+    height: 17px;
+    width: 43px;
+  }
+  .bed-icon-size {
+    height: 20px;
+    width: 34px;
   }
 }
 @media screen and (max-width: 454px) and (min-width: 325px){
@@ -254,7 +302,7 @@
     padding-right: 4px;
   }
   .flat-list {
-    margin-left: -108px;
+    margin-left: -117px;
     margin-top: -67px;
   }
   .above-background-box {
@@ -267,5 +315,17 @@
   }
   .row.background-box {
     margin-top: 32px;
+  }
+  .door-icon-size {
+    height: 15px;
+    width: 23px;
+  }
+  .ruler-icon-size {
+    height: 12px;
+    width: 32px;
+  }
+  .bed-icon-size {
+    height: 13px;
+    width: 22px;
   }
 }
