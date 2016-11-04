@@ -6,4 +6,6 @@ class Flat < ApplicationRecord
   validates :pieces_number, presence:true
   validates :description, presence:true
   validates :opinion, presence:true
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
 end

@@ -39,6 +39,7 @@ gem "simple_form"
 gem "autoprefixer-rails"
 gem 'mail_form'
 gem 'sendgrid-ruby'
+gem "geocoder"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-plugin'
