@@ -82,7 +82,9 @@
 }
 // Map
 .map-position {
-  padding: 17px 15px 0 15px;
+  margin: 17px 15px 0 15px;
+  border: 1px solid rgba(black,0.4);
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
 }
 // Call-to-Action
 .call-to-action {
