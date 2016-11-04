@@ -5,21 +5,9 @@
   display: inline-block;
   margin-top: -10px;
 }
-h4 {
-    margin: 20px 10px 10px;
-}
-p {
-    margin: 10px;
-}
-
-#carousel-example-generic {
-    margin: 20px auto;
-    width: 400px;
-}
-
 #carousel-custom {
-    margin: 20px auto;
-    width: 533px;
+  margin: 20px auto;
+  width: 533px;
 }
 #carousel-custom .carousel-indicators {
     margin: 10px 0 0;
@@ -51,4 +39,44 @@ p {
 #carousel-custom .carousel-outer {
     position: relative;
 }
-
+@media screen and (max-width: 1200px) and (min-width: 1020px){
+  #carousel-custom {
+    width: 462px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 802px){
+ #carousel-custom {
+    margin-left: 10px auto;
+  }
+}
+@media screen and (max-width: 570px) and (min-width: 464px){
+   #carousel-custom {
+    width: 420px;
+    margin-left: 10px auto ;
+  }
+  .padded {
+    padding-top: 1em;
+ }
+}
+@media screen and (max-width: 464px) and (min-width: 385px){
+  #carousel-custom {
+    width: 340px;
+    margin-left: 10px auto ;
+  }
+  .padded {
+    padding-top: 1em;
+  }
+}
+@media screen and (max-width: 385px) and (min-width: 325px){
+  #carousel-custom {
+    width: 280px;
+    margin-left: 10px auto ;
+  }
+  .padded {
+    padding-top: 1em;
+  }
+  .sub-navbar h3 {
+    font-size: 19px;
+  }
+}
