@@ -18,14 +18,13 @@
       </li>
     </ul>
   </div>
-  <div class="footer-newsletter hidden-xs hidden-sm">
-    <label for="" style="color: white; font-weight: lighter;" >Souscrivez à la newsletter:</label>
-    <div class="form-inline">
-      <%#= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-       <%#= f.email_field :email,placeholder: "Email...", label: false, :required => true %>
-      <%#= f.submit 'Suivez-nous', class: "btn-footer" %>
-      <input type="submit" value="Suivez-nous" class="btn-footer" style="border-radius: 0 5px 5px 0;">
-      <%# end %>
-    </div>
+  <div class="footer-newsletter form-inline hidden-xs hidden-sm">
+    <label for="" style="color: white; font-weight: lighter;margin-bottom: 0!important" >Souscrivez à la newsletter:</label>
+
+    <div class="sendgrid-subscription-widget email-input" data-token="ffedCO4%2FbVU5m3zAWJVWD%2F4rLboqvlp47Kb9k24N7TZS3uSUA92eoVZVUq%2Fvf0Y9SD7uBpArOeTMiH9TEnu6dQ%3D%3D"></div>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://s3.amazonaws.com/subscription-cdn/0.2/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "sendgrid-subscription-widget-js");
+    </script>
   </div>
 </div>

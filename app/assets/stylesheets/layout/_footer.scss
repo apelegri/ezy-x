@@ -14,9 +14,20 @@
   margin-right: 30px;
   input:first-child {
     border-radius: 5px 0 0 5px;
+    height: 33px;
   }
   input:last-child {
     border-radius: 0 5px 5px 0;
+    background: $black;
+    color: $white;
+    border: 1px solid $white;
+    font-weight: lighter;
+    height: 33px;
+  }
+  input:last-child:hover {
+    border: 1px solid $white;
+    color: $black;
+    background: $white;
   }
 }
 .fa-home {
@@ -26,3 +37,18 @@
 .fa-home:hover {
   color: $light-grey;
 }
+.sendgrid-subscription-widget input {
+  margin: 3px 0;
+  border-radius: 5px 0 0 5px;
+  position: relative !important;
+}
+.sendgrid-subscription-widget label>span {
+  font-size: 0;
+  font-weight: 100;
+  color: black;
+}
+.email-input {
+  position: relative !important;
+  right: 20px !important;
+}
+
