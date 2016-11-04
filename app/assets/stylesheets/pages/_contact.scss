@@ -7,20 +7,30 @@
   margin-bottom: 50px;
   padding-top: 70px;
   padding-bottom: 25px;
-  height: 730px;
+  height: 785px;
   box-shadow: 0px 2px 20px 0px rgba(237, 237, 237, 0.7);
 }
+.adjust-input {
+  width: 100%;
+  height: 38px;
+}
+
 @media only screen and (max-width: 768px){
   .skinny_wrapper {
     width: 70%;
   }
 }
+
 @media only screen and (max-width: 575px){
   .skinny_wrapper {
     width: 80%;
   }
   textarea {
     min-height: 10em;
+  }
+  .adjust-input {
+    width: 100%;
+    height: 38px;
   }
 }
 .wrapper_padding {
@@ -31,7 +41,7 @@
   max-width: 760px;
   margin: 0 auto;
 }
-input[type="text"], input[type="email"], input[type="password"], textarea {
+input[type="text"], input[type="email"], select[type="objet"], textarea {
   width: 100%;
   max-width: 100%;
   height: 3em;
