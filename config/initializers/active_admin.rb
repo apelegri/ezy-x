@@ -1,9 +1,9 @@
-ActiveAdmin.setup do |config|
-  # == Site Title
-  config.site_title = "EZI-X with love"
   def authenticate_admin!
     redirect_to new_user_session_path unless current_user && current_user.admin
   end
+ActiveAdmin.setup do |config|
+  # == Site Title
+  config.site_title = "EZI-X with love"
   #
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.

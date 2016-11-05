@@ -1,5 +1,6 @@
 class FlatsController < ApplicationController
-before_action :set_flat, only: [:show]
+before_action :set_flat, only: [:show, :edit, :update, :destroy]
+before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @flats = Flat.all
@@ -21,6 +22,17 @@ before_action :set_flat, only: [:show]
   def create
     @flat = Flat.new flat_params
     @user = current_user
+  end
+
+  def edit
+  end
+
+  def update
+    @flat.update flat_params
+  end
+
+  def destroy
+    @flat.destroy
   end
 
   private
