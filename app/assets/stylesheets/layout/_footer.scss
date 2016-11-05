@@ -13,16 +13,18 @@
 .footer-newsletter {
   margin-right: 30px;
   input:first-child {
-    border-radius: 5px 0 0 5px;
-    height: 33px;
+    border-radius: 5px 5px 5px 5px;
+    height: 25px;
   }
   input:last-child {
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px 5px;
     background: $black;
     color: $white;
     border: 1px solid $white;
     font-weight: lighter;
-    height: 33px;
+    height: 24px;
+    width: 200px;
+    margin-top: -5px;
   }
   input:last-child:hover {
     border: 1px solid $white;
@@ -39,7 +41,7 @@
 }
 .sendgrid-subscription-widget input {
   margin: 3px 0;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 5px 5px 5px;
   position: relative !important;
 }
 .sendgrid-subscription-widget label>span {
