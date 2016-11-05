@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
+gem 'devise'
+
+gem 'cloudinary', '1.1.0'
+
 
 # Frontend Gem
 gem "bootstrap-sass"
