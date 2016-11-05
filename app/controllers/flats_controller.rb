@@ -30,6 +30,6 @@ before_action :set_flat, only: [:show]
   end
 
   def flat_params
-    params.require(:flat).permit(:property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address, :user_id)
+    params.require(:flat).permit(:property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address)
   end
 end
