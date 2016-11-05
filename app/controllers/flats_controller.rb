@@ -14,9 +14,22 @@ before_action :set_flat, only: [:show]
       end
   end
 
+  def new
+    @flat = Flat.new
+  end
+
+  def create
+    @flat = Flat.new flat_params
+    @user = current_user
+  end
+
   private
 
   def set_flat
     @flat = Flat.find(params[:id])
+  end
+
+  def flat_params
+    params.require(:flat).permit(:property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address, :user_id)
   end
 end
