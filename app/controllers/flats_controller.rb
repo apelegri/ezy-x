@@ -16,7 +16,7 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def new
-    @flat = Flat.new
+    @flat = Flat.new.user_id
   end
 
   def create
