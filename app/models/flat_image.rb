@@ -4,6 +4,6 @@ class FlatImage < ApplicationRecord
   mount_uploader :image, PhotoUploader
   # mount_uploader :image, ProductImageUploader
 
-  validates :image, :flat_id, presence: true
+  validates :image, presence: true
 
 end

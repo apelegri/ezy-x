@@ -12,7 +12,7 @@ ActiveAdmin.register Flat do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitte
 # end
-permit_params :property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion, :created_at, :updated_at, :bathroom, :wc, :floor, :terrace, :cellar, :transports, :transport, :school, :shop, :heating, :bus, :metro, :address, :user_id
+permit_params :property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion, :created_at, :updated_at, :bathroom, :wc, :floor, :terrace, :cellar, :transports, :transport, :school, :shop, :heating, :bus, :metro, :address, :user_id, :image
 
   form do |f|
     f.inputs "Flats" do
