@@ -20,8 +20,7 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def create
-    flat = @flat = Flat.new flat_params
-    flat.save
+    @flat = Flat.new flat_params
     @user = current_user
   end
 
