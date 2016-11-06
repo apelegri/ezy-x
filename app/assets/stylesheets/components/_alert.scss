@@ -3,9 +3,11 @@
 * ------------------------------------- */
 
 .alert {
-  margin: 0;
+  margin: 0px;
   text-align: center;
   color: white;
+  padding-top: 24px;
+  font-size: 32px;
 }
 .alert-info {
   background: $green;
@@ -13,7 +15,11 @@
 .alert-warning {
   background: $red;
 }
-
+.notice {
+  padding-top: 24px;
+  font-size: 32px;
+  text-align: center;
+}
 .hidden { display: none; }
 
 /*flash*/
