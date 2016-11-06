@@ -1,6 +1,8 @@
 class Flat < ApplicationRecord
   belongs_to :user
-  mount_uploader :photo, PhotoUploader
+  has_many :flat_images, dependent: :destroy
+  accepts_nested_attributes_for :flat_images
+  validates_associated :flat_images
 
   validates :property_type, presence:true
   validates :price, presence:true

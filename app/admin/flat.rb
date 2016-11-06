@@ -36,7 +36,10 @@ permit_params :property_type, :price, :room_number, :square_meters, :pieces_numb
       f.input :shop
       f.input :bus
       f.input :metro
-      f.input :photo, as: :file
+      # f.input :photo, as: :file
+      f.has_many :flat_images do |image|
+      image.input :flat_id, as: :hidden
+      image.input :image
     end
     f.actions
   end
