@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  root to: redirect('/admin')
   match '/admin', to: 'admin/flats#index', via: :get
   ActiveAdmin.routes(self)
   devise_for :users

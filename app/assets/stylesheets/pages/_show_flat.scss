@@ -1,3 +1,75 @@
+.sub-navbar {
+  background-color: #CAC7C7 ;
+  height: 70px;
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+  -moz-box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+  box-shadow:0px 1px 0.8px rgba(8,8,8,0.5);
+}
+.sub-navbar h3 {
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
+// Descriptrion
+.flat-pic-show {
+  height: 280px;
+  margin: 10px;
+  background-size: cover !important;
+  border-radius: 2px;
+}
+.border-box {
+  margin: 0px 10px 0px 10px;
+}
+.subtitle-border {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid #333333;
+  line-height: 35px;
+}
+.subtitle-border h4 {
+  padding-right: 5px;
+  font-weight: bolder;
+}
+.characteristics {
+  padding: 17px 15px 0 15px;
+}
+.label-tag li {
+  background-color: rgba(9, 9, 9, 0.8);
+  padding: 3px;
+  color: $white;
+  margin-bottom: 4px;
+}
+
+// Opinion
+.text-opinion {
+  padding: 17px 15px 0 15px;
+}
+
+// Environment
+
+.text-info {
+  padding: 17px 15px 0 15px;
+  color: $black;
+}
+.text-info p {
+  font-weight: lighter;
+  line-height: 15px;
+}
+// Map
+.map-position {
+  margin: 17px 15px 0 15px;
+  border: 1px solid rgba(black,0.4);
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+}
+// Call-to-Action
+.call-to-action {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
   position: absolute;
   top: 40% !important;
