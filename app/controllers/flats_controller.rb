@@ -25,6 +25,7 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def edit
+    @flat.edit flat_params
   end
 
   def update

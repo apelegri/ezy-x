@@ -14,7 +14,7 @@ ActiveAdmin.register Flat do
 # end
 permit_params :property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion, :created_at, :updated_at, :bathroom, :wc, :floor, :terrace, :cellar, :transports, :transport, :school, :shop, :heating, :bus, :metro, :address, :user_id
 
-  form(:html => { :multipart => true })  do |f|
+  form do |f|
     f.inputs "Flats" do
       f.input :property_type
       f.input :price
@@ -38,6 +38,5 @@ permit_params :property_type, :price, :room_number, :square_meters, :pieces_numb
       f.input :metro
       f.input :photo, as: :file, :hint => f.template.image_tag(f.object.image.url)
     end
-    f.actions
   end
 end
