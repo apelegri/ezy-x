@@ -248,6 +248,7 @@
   .flat-list {
     margin-left: -103px;
     margin-top: -52px;
+    width: 199px;
   }
   .above-background-box {
     font-size: 12px;
@@ -255,25 +256,28 @@
   }
   .cards-header {
     font-size: 12px;
-    margin-bottom: 9px;
+    margin-bottom: -5px;
+  }
+  .background-box h4 {
+    margin-bottom: 7px !important;
   }
   .row.background-box {
     margin-top: 32px;
   }
   .door-icon-size {
-    height: 21px;
-    width: 33px;
+    height: 15px;
+    width: 23px;
   }
   .ruler-icon-size {
-    height: 17px;
-    width: 43px;
+    height: 12px;
+    width: 32px;
   }
   .bed-icon-size {
-    height: 20px;
-    width: 34px;
+    height: 13px;
+    width: 22px;
   }
 }
-@media screen and (max-width: 454px) and (min-width: 325px){
+@media screen and (max-width: 455px) and (min-width: 325px){
   .flat-card {
     height: 92px;
   }
@@ -312,6 +316,9 @@
   .cards-header {
     font-size: 10px;
     margin-bottom: 9px;
+  }
+  .background-box h4 {
+    margin-bottom: 7px !important;
   }
   .row.background-box {
     margin-top: 32px;

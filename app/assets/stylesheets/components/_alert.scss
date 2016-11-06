@@ -16,9 +16,25 @@
   background: $red;
 }
 .notice {
-  padding-top: 24px;
+  padding-top: 20px;
+  font-weight: bold;
   font-size: 32px;
   text-align: center;
+  color: #34A853;
+  margin-bottom: 0;
+  background-color: $black;
+}
+.alert {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: $red;
+  margin-bottom: 0;
+  background-color: $black;
+}
+.p-design p{
+  padding-bottom: 20px;
 }
 .hidden { display: none; }
 
