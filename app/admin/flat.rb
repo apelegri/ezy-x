@@ -38,5 +38,6 @@ permit_params :property_type, :price, :room_number, :square_meters, :pieces_numb
       f.input :metro
       f.input :photo, as: :file
     end
+    f.actions
   end
 end
