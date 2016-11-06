@@ -42,6 +42,6 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def flat_params
-    params.require(:flat).permit(:property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address)
+    params.require(:flat).permit(:property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address, :photo)
   end
 end

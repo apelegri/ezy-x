@@ -24,7 +24,8 @@ flat = Flat.new(property_type: "Appartement, Paris 15ième" ,
                 bus: "Bus : 88, 98",
                 school: "Maternelle, Primaire, Collège, Lycée",
                 shop: "Carrefour (-5 min), Boulangerie/ Baker (-2 min)",
-                address: "366 rue vaugirard")
+                address: "366 rue vaugirard",
+                photo: "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png")
 
 flat.save!
 flat = Flat.new(property_type: "Appartement, Paris 15ième" ,

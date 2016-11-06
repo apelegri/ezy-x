@@ -1,4 +1,7 @@
 class Flat < ApplicationRecord
+  belongs_to :user
+  mount_uploader :photo, PhotoUploader
+
   validates :property_type, presence:true
   validates :price, presence:true
   validates :room_number, presence:true
@@ -9,5 +12,4 @@ class Flat < ApplicationRecord
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
 
-  belongs_to :user
 end

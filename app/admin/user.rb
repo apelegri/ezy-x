@@ -13,24 +13,24 @@ ActiveAdmin.register User do
 #   permitted
 # end
 
-form do |f|
-  f.inputs "Identity" do
-    f.input :name
-    f.input :email
+  form do |f|
+    f.inputs "Identity" do
+      f.input :name
+      f.input :email
 
+    end
+    f.inputs "Admin" do
+      f.input :admin
+    end
+    f.actions
   end
-  f.inputs "Admin" do
-    f.input :admin
+  index do
+    selectable_column
+      column :id
+      column :email
+      column :created_at
+      column :admin
+      actions
   end
-  f.actions
-end
-index do
-  selectable_column
-    column :id
-    column :email
-    column :created_at
-    column :admin
-    actions
-end
 
 end
