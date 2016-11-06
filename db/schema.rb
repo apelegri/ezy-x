@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161106161058) do
+ActiveRecord::Schema.define(version: 20161106223435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,10 +71,8 @@ ActiveRecord::Schema.define(version: 20161106161058) do
     t.string   "floor"
     t.string   "terrace"
     t.string   "cellar"
-    t.string   "transports"
     t.string   "around_description"
     t.string   "environment"
-    t.string   "transport"
     t.string   "school"
     t.string   "shop"
     t.string   "heating"
