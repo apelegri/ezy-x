@@ -37,6 +37,7 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 
 
+
 # Frontend Gem
 gem "bootstrap-sass"
 gem "font-awesome-sass"
