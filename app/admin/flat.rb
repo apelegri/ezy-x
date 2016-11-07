@@ -14,32 +14,33 @@ ActiveAdmin.register Flat do
 # end
 permit_params :property_type, :price, :bedroom_number, :square_meters, :room_number, :description, :opinion, :created_at, :updated_at, :bathroom, :wc, :floor, :terrace, :cellar, :school, :shop, :heating, :bus, :metro, :address, :user_id, :image
   index do
-     id_column
-     column :property_type
-     column :price
-     column :square_meters
-     column :beroom_number
-     column :room_number
-     column :description do |n|
-        truncate(n.description, length:30)
-        end
-        actions
-     column :opinion do |n|
-        truncate(n.opinion, length: 30)
-        end
+    id_column
+    column :property_type
+    column :price
+    column :square_meters
+    column :bedroom_number
+    column :room_number
+    column :address
+    column :description do |n|
+      truncate(n.description, length:30)
+      end
+
+    column :opinion do |n|
+      truncate(n.opinion, length: 30)
+      end
       actions
-      column :address
   end
+
   form do |f|
     f.inputs "Flats" do
       f.input :property_type
       f.input :price
-      f.input :bedroom_number
       f.input :square_meters
+      f.input :bedroom_number
       f.input :room_number
+      f.input :bathroom
       f.input :description
       f.input :opinion
-      f.input :bathroom
       f.input :wc
       f.input :heating
       f.input :floor
@@ -50,7 +51,6 @@ permit_params :property_type, :price, :bedroom_number, :square_meters, :room_num
       f.input :shop
       f.input :bus
       f.input :metro
-      # f.input :photo, as: :file
       f.has_many :flat_images do |image|
         image.input :flat_id, as: :hidden
         image.input :image
