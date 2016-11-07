@@ -1,6 +1,6 @@
 .hover-slide {
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   margin-top: 160px;
 }
 .hover-slide ul>li {
@@ -201,15 +201,15 @@
     left: 348px;
   }
   .position-2 {
-  font-size: 22px;
-  position: absolute;
-  bottom: 141px;
-  left: 348px;
+    font-size: 22px;
+    position: absolute;
+    bottom: 141px;
+    left: 348px;
   }
   .position-3 {
-  font-size: 22px;
-  position: absolute;
-  bottom: 46px;
-  left: 348px;
+    font-size: 22px;
+    position: absolute;
+    bottom: 46px;
+    left: 348px;
   }
 }

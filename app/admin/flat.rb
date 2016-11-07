@@ -13,7 +13,23 @@ ActiveAdmin.register Flat do
 #   permitte
 # end
 permit_params :property_type, :price, :room_number, :square_meters, :pieces_number, :description, :opinion, :created_at, :updated_at, :bathroom, :wc, :floor, :terrace, :cellar, :school, :shop, :heating, :bus, :metro, :address, :user_id, :image
-
+  index do
+     id_column
+     column :property_type
+     column :price
+     column :square_meters
+     column :room_number
+     column :pieces_number
+     column :description do |n|
+        truncate(n.description, length:30)
+        end
+        actions
+     column :opinion do |n|
+        truncate(n.opinion, length: 30)
+        end
+      actions
+      column :address
+  end
   form do |f|
     f.inputs "Flats" do
       f.input :property_type

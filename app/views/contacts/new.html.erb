@@ -6,21 +6,22 @@
           <h3 style="font-weight: bold; margin-top: -10px">VOTRE MESSAGE</h3>
           <p style="margin-bottom: 20px;">Nous vous contacterons au plus vite.</p><br>
           <%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-            <%= f.text_field :name, placeholder: "José Beauvais...", :required => true %>
-            <%= f.email_field :email,placeholder: "josébeauvais@gmail.com...", label: false, :required => true %>
+            <%= f.text_field :name, placeholder: "Nom Prénom", :required => true %>
+            <%= f.email_field :email,placeholder: "Email", label: false, :required => true %>
             <p style="font-weight: bold; text-align: left; margin-top: -7px" >Objet:</p>
             <%= select_tag(:object, options_for_select(
               [
                 ["J'aimerai faire une viste", 1],
                 ["J'aimerai vous proposer un bien", 2, ],
-                ["J'aimerai être le premier au courant", 3, ]
+                ["J'aimerai avoir une estimation", 3, ],
+                ["J'aimerai être le premier au courant", 4, ]
 
-              ], 1
-            ), { :class => 'adjust-input' }) %>
+              ],
+            ), { :class => 'adjust-input', :include_blank => "Choisir un objet" }) %>
 
             <%#= f.select ['Demande de visite', 'Je veux être le premier au courant']%>
             <p style="font-weight: bold; text-align: left; margin-top: 15px">Message:</p>
-            <%= f.text_area :message, :as => :text, placeholder: "Recherche un appartement dans le 3ième avec vue sur parc...", label: false, :required => true %>
+            <%= f.text_area :message, :as => :text, placeholder: "Recherche un appartement dans le 3ème avec vue sur parc...", label: false, :required => true %>
             <div class= "hidden">
               <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
             </div>
