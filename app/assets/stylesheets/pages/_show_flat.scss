@@ -41,6 +41,11 @@
   color: $white;
   margin-bottom: 4px;
 }
+.show-flat-list {
+  position: absolute;
+  left: 733px;
+  top: 11px;
+}
 
 // Opinion
 .text-opinion {
@@ -116,15 +121,141 @@
 #carousel-custom .carousel-outer {
     position: relative;
 }
+@media screen and (min-width: 1200px){
+ .show-flat-list {
+    left: 839px;
+    top: 13px;
+  }
+   .sub-navbar h3 {
+    font-size: 29px;
+    margin-top: 17px;
+  }
+  .show-flat-list p {
+    font-size: 13px;
+  }
+  .show-door-icon-size {
+    height: 26px;
+    width: 42px;
+  }
+  .show-ruler-icon-size {
+    height: 21px;
+    width: 61px
+  }
+  .show-bed-icon-size {
+    height: 28px;
+    width: 44px;
+  }
+}
 @media screen and (max-width: 1200px) and (min-width: 1020px){
   #carousel-custom {
     width: 462px;
     margin-left: 10px;
   }
+  .show-flat-list {
+    left: 635px;
+    top: 14px;
+  }
+   .sub-navbar h3 {
+    font-size: 29px;
+    margin-top: 17px;
+  }
+  .show-flat-list p {
+    font-size: 13px;
+  }
+  .show-door-icon-size {
+    height: 26px;
+    width: 42px;
+  }
+  .show-ruler-icon-size {
+    height: 21px;
+    width: 61px
+  }
+  .show-bed-icon-size {
+    height: 28px;
+    width: 44px;
+  }
+}
+@media screen and (max-width: 1020px) and (min-width: 991px){
+  .show-flat-list {
+    left: 632px;
+    top: 11px;
+  }
+    #carousel-custom {
+    width: 462px;
+    margin-left: 10px;
+  }
+  .sub-navbar h3 {
+    font-size: 20px;
+    margin-top: 21px;
+  }
+  .show-flat-list p {
+    font-size: 13px;
+  }
+  .show-door-icon-size {
+    height: 26px;
+    width: 42px;
+  }
+  .show-ruler-icon-size {
+    height: 21px;
+    width: 61px
+  }
+  .show-bed-icon-size {
+    height: 28px;
+    width: 44px;
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 802px){
  #carousel-custom {
     margin-left: 10px auto;
+  }
+  .sub-navbar h3 {
+    font-size: 20px;
+    margin-top: 21px;
+  }
+  .show-flat-list p {
+    font-size: 13px;
+  }
+  .show-flat-list {
+    left: 402px;
+    top: 8px;
+  }
+  .show-door-icon-size {
+    height: 26px;
+    width: 42px;
+  }
+  .show-ruler-icon-size {
+    height: 21px;
+    width: 61px
+  }
+  .show-bed-icon-size {
+    height: 28px;
+    width: 44px;
+  }
+}
+@media screen and (max-width: 802px) and (min-width: 570px){
+  .sub-navbar h3 {
+    font-size: 19px;
+    margin-top: 22px;
+  }
+  .show-flat-list p {
+    font-size: 9px;
+  }
+  .show-flat-list {
+    left: 319px;
+    top: 18px;
+  }
+  .show-door-icon-size {
+    height: 26px;
+    width: 42px;
+  }
+  .show-ruler-icon-size {
+    height: 21px;
+    width: 59px;
+  }
+  .show-bed-icon-size {
+       height: 24px;
+    width: 38px;
+
   }
 }
 @media screen and (max-width: 570px) and (min-width: 464px){
@@ -135,6 +266,31 @@
   .padded {
     padding-top: 1em;
  }
+  .sub-navbar h3 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: -16px;
+    font-weight: bold;
+  }
+  .show-flat-list p {
+    font-size: 7px;
+  }
+  .show-flat-list {
+    left: 259px;
+    top: 20px;
+  }
+  .show-door-icon-size {
+    height: 20px;
+    width: 30px;
+  }
+  .show-ruler-icon-size {
+    height: 19px;
+    width: 50px;
+  }
+  .show-bed-icon-size {
+    height: 19px;
+    width: 32px;
+  }
 }
 @media screen and (max-width: 464px) and (min-width: 385px){
   #carousel-custom {
@@ -143,6 +299,31 @@
   }
   .padded {
     padding-top: 1em;
+  }
+  .sub-navbar h3 {
+    font-size: 12px;
+    margin-top: 27px;
+    margin-left: -16px;
+    font-weight: bold;
+  }
+  .show-flat-list p {
+    font-size: 7px;
+  }
+  .show-flat-list {
+    left: 195px;
+    top: 20px;
+  }
+  .show-door-icon-size {
+    height: 20px;
+    width: 30px;
+  }
+  .show-ruler-icon-size {
+    height: 19px;
+    width: 50px;
+  }
+  .show-bed-icon-size {
+    height: 19px;
+    width: 32px;
   }
 }
 @media screen and (max-width: 385px) and (min-width: 325px){
@@ -154,6 +335,6 @@
     padding-top: 1em;
   }
   .sub-navbar h3 {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
