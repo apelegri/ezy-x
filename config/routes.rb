@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get '/about', to: 'pages#about'
+
   get 'root' => 'flat#show'
   get 'landing/index' => 'landing#index'
   match '/admin', to: 'admin/flats#index', via: :get
