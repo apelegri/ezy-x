@@ -20,6 +20,7 @@
 }
 .border-box {
   margin: 0px 10px 0px 10px;
+  margin-top: 16px;
 }
 .subtitle-border {
   display: flex;
@@ -74,53 +75,21 @@
   justify-content: space-around;
   margin-top: 10px;
 }
+// Caroussel
+.carousel{
+  width:100%;
+  height:600px;
+}
+.carousel-inner {
+  max-height: 600px;
+}
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+.carousel-control {
+  opacity: 0.8;
+}
 
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-  position: absolute;
-  top: 40% !important;
-  z-index: 5;
-  display: inline-block;
-  margin-top: -10px;
-}
-#carousel-custom {
-  margin: 20px auto;
-  margin-top: 10px !important;
-  width: 533px;
-}
-#arrow-background {
-  background-image: none !important;
-}
-#carousel-custom .carousel-indicators {
-    margin: 10px 0 0;
-    overflow: auto;
-    position: static;
-    text-align: left;
-    white-space: nowrap;
-    width: 100%;
-}
-#carousel-custom .carousel-indicators li {
-    background-color: transparent;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    display: inline-block;
-    height: auto;
-    margin: 0 !important;
-    width: auto;
-}
-#carousel-custom .carousel-indicators li img {
-    display: block;
-    opacity: 0.5;
-}
-#carousel-custom .carousel-indicators li.active img {
-    opacity: 1;
-}
-#carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
-}
-#carousel-custom .carousel-outer {
-    position: relative;
-}
 @media screen and (min-width: 1200px){
  .show-flat-list {
     left: 839px;
@@ -147,10 +116,6 @@
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 1020px){
-  #carousel-custom {
-    width: 462px;
-    margin-left: 10px;
-  }
   .show-flat-list {
     left: 635px;
     top: 14px;
@@ -180,10 +145,6 @@
     left: 632px;
     top: 11px;
   }
-    #carousel-custom {
-    width: 462px;
-    margin-left: 10px;
-  }
   .sub-navbar h3 {
     font-size: 20px;
     margin-top: 21px;
@@ -205,9 +166,6 @@
   }
 }
 @media screen and (max-width: 991px) and (min-width: 802px){
- #carousel-custom {
-    margin-left: 10px auto;
-  }
   .sub-navbar h3 {
     font-size: 20px;
     margin-top: 21px;
@@ -259,10 +217,6 @@
   }
 }
 @media screen and (max-width: 570px) and (min-width: 464px){
-   #carousel-custom {
-    width: 420px;
-    margin-left: 10px auto ;
-  }
   .padded {
     padding-top: 1em;
  }
@@ -293,10 +247,6 @@
   }
 }
 @media screen and (max-width: 464px) and (min-width: 385px){
-  #carousel-custom {
-    width: 340px;
-    margin-left: 10px auto ;
-  }
   .padded {
     padding-top: 1em;
   }
@@ -327,10 +277,6 @@
   }
 }
 @media screen and (max-width: 385px) and (min-width: 325px){
-  #carousel-custom {
-    width: 280px;
-    margin-left: 10px auto ;
-  }
   .padded {
     padding-top: 1em;
   }
