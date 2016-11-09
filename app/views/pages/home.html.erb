@@ -1,34 +1,102 @@
-<div class="col-xs-12 col-sm-6 col-md-4 hover-slide text-center">
-  <ul>
-    <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
-    <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
+<div class="wrapper">
+  <div class="position-caroussel">
+    <div class="col-xs-12 col-sm-6 col-md-4 hover-slide text-center">
+      <ul>
+        <li><%= link_to "NOS BIENS", flats_path, class: "btn-home"%> </li><br>
+        <i class="fa fa-chevron-right position-1" aria-hidden="true"></i>
 
-    <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
-    <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
+        <li><%= link_to "ESTIMATION", contacts_path, class: "btn-home" %></li>
+        <i class="fa fa-chevron-right position-2" aria-hidden="true"></i>
 
-    <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
-    <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
-  </ul>
-</div>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+        <li><%= link_to "CONTACT", contacts_path, class: "btn-home" %></li>
+        <i class="fa fa-chevron-right position-3" aria-hidden="true"></i>
+      </ul>
+    </div>
+    <div id="carousel-example-generic" class="carousel-home slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" id='gradient' role="listbox">
-    <div class="item active">
-      <%= image_tag("home_pic.jpg", :alt => "home-pic") %>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner inner-size" id='gradient' role="listbox">
+        <div class="item active">
+          <%= image_tag("home_pic.jpg", :alt => "home-pic") %>
+        </div>
+        <div class="item">
+          <%= image_tag("home-chair.jpg", :alt => "home-chair") %>
+        </div>
+        <div class="item">
+          <%= image_tag("home-salon.jpg", :alt => "home-salon") %>
+        </div>
+      </div>
     </div>
-    <div class="item">
-      <%= image_tag("home-chair.jpg", :alt => "home-chair") %>
+  </div>
+  <!-- Info -->
+  <div class="background-style">
+  <h1 class="text-center">L’agence ERA Cambronne devient EZI-X!</h1><br>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="col-xs-4">
+        <div class="text-center box-style">
+          <%= image_tag("Preparation-vente.jpg", :alt => "Preparation-vente") %>
+          <h4>Préparation de la vente</h4>
+          <p>Estimation au juste prix</p>
+          <p>Marketing du bien</p>
+          <p>Préparation du dossier de vente</p>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="text-center box-style">
+          <%= image_tag("recherche_acquereur.jpg", :alt => "recherche_acquereur") %>
+          <h4>Recherche des acquéreurs</h4>
+          <p>Prise en charge des visites</p>
+          <p>Activation de notre base acquéreurs</p>
+          <p>Vérification de solvabilité</p>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="text-center box-style">
+          <%= image_tag("Signature_acte.jpg", :alt => "Signature_acte") %>
+          <h4>Signature de l’acte de vente</h4>
+          <p>Communication des pièces au notaire</p>
+          <p>Aide à la recherche de solutions</p>
+          <p>déménagement et de travaux</p>
+        </div>
+      </div>
+      <div class="col-xs-12 text-center main-trait">
+        <h2>TRANSPARENCE & REACTIVITE </h2>
+        <p>______________</p>
+        <h2 id="title-home">COMMISSIONS ATTRACTIVES</h2>
+      </div>
     </div>
-    <div class="item">
-      <%= image_tag("home-salon.jpg", :alt => "home-salon") %>
-    </div>
+
+  </div>
+  </div>
+
+
+  <!-- Map -->
+  <div>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <% content_for(:after_js) do %>
+      <script>
+        $(document).ready(function() {
+          var handler = Gmaps.build('Google');
+          handler.buildMap({ internal: { id: 'map' } }, function() {
+            markers = handler.addMarkers(<%= raw @hash.to_json %>);
+            handler.bounds.extendWith(markers);
+            handler.fitMapToBounds();
+            if (markers.length == 0) {
+              handler.getMap().setZoom(3);
+            } else if (markers.length == 1) {
+              handler.getMap().setZoom(14);
+            }
+          });
+        });
+      </script>
+    <% end %>
   </div>
 </div>
 

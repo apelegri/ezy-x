@@ -1,5 +1,6 @@
 class Flat < ApplicationRecord
   belongs_to :user
+  belongs_to :page
   has_many :flat_images, dependent: :destroy
   accepts_nested_attributes_for :flat_images
   validates_associated :flat_images

@@ -1,11 +1,36 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
 .banner-content > li {
   display: list-item;
   text-align: center;
 }
 
+// Second part of the Home
+.background-style {
+  background-color: $light-grey;
+}
+.background-style h1 {
+  margin-top: 0px !important;
+  padding-top: 40px;
+}
 
+.box-style {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.box-style h4 {
+  font-weight: bold;
+  margin-top: 43px;
+}
+
+.carousel-home {
+  min-height: 700px;
+}
+.inner-size {
+  min-height: 700px;
+}
+.main-trait p {
+  margin-top: -4px;
+}
+#title-home {
+  margin-bottom: 40px;
+}
 
