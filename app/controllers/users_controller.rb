@@ -22,10 +22,6 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
-  # def admin?
-  #   current_user.admin
-  # end
-
   private
   def user_params
     params.require(:user).permit(:name, :email, :admin, :encrypted_password)

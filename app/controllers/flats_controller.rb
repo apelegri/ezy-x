@@ -22,7 +22,6 @@ class FlatsController < ApplicationController
 
   def create
     @flat = Flat.new flat_params
-    @user = current_user
   end
 
   def edit
