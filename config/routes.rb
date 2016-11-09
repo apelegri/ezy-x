@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'landing/index' => 'landing#index'
   match '/admin', to: 'admin/flats#index', via: :get
   get 'about', to: 'pages#about'
-  resources :flats, only: [:index, :show]
+  resources :flats, only: [:index, :show, :edit, :update]
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
   ActiveAdmin.routes(self)

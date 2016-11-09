@@ -69,11 +69,6 @@
   cursor: pointer;
   padding: 0 20px;
 }
-.navbar-wagon-link:hover {
-  border-bottom: 3px solid $white;
-  color: $white
-}
-
 .fix-font {
   font-family: $base-font;
   color: $white;
@@ -90,7 +85,22 @@
   padding-right: 0;
   padding-bottom: 4px;
 }
+.navbar-wagon-link-admin {
+  color: $white;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-left: 0;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  margin-right: 55px;
+}
+.navbar-wagon-link-admin:hover {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 3px solid #FFFFFF;
+}
 .navbar-wagon-link:hover {
+  border-bottom: 3px solid $white;
   color: $white;
   text-decoration: none;
 }

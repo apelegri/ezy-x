@@ -2,6 +2,10 @@
   <div class="row background-box" style="padding-top: 0px">
     <div class="sub-navbar">
       <div class="col-xs-12 col-md-12 ">
+        <% if user_signed_in? && current_user.admin %>
+          <h3><%= @flat.property_type %></h3>
+          <%= link_to "Image Upload", edit_flat_path(@flat), class:"btn-upload" %>
+        <% else %>
         <h3><%= @flat.property_type %></h3>
         <ul class="list-inline text-center show-flat-list">
           <li style="border-right:1px solid $light-grey;">
@@ -17,6 +21,7 @@
             <strong><p><%= @flat.room_number %> Pièce(s)</p></strong>
           </li>
         </ul>
+        <% end %>
       </div>
     </div>
 
@@ -32,7 +37,8 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" id='gradient' role="listbox">
         <div class="item active">
-          <%= image_tag("home_pic.jpg", :alt => "home-pic") %>
+          <%= cl_image_tag @flat.image.url, height: 300, width: 400, crop: :fill %>
+
         </div>
         <div class="item">
           <%= image_tag("home-chair.jpg", :alt => "home-chair") %>

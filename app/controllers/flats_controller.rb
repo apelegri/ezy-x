@@ -3,6 +3,7 @@ class FlatsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
 
+
   def index
     @flats = Flat.all
   end
@@ -25,11 +26,21 @@ class FlatsController < ApplicationController
   end
 
   def edit
-    @flat.edit flat_params
+     #@flat = Flat.new flat_params
   end
 
   def update
-    @flat.update flat_params
+    #@flat.update flat_params
+    if current_user.admin
+      if @flat.update(flat_params)
+        redirect_to @flat
+      else
+        render 'edit'
+      end
+    else
+      flash[:alert] = "Action impossible, vous n'etes pas administrateur de ce site"
+      redirect_to cocktails_path
+    end
   end
 
   def destroy
@@ -43,6 +54,29 @@ class FlatsController < ApplicationController
   end
 
   def flat_params
-    params.require(:flat).permit(:property_type, :price, :bedroom_number, :square_meters, :room_number, :description, :opinion,  :bathroom, :wc, :floor, :terrace, :cellar, :transports, :around_description, :environment, :transport, :school, :shop, :heating, :bus, :metro, :address, :image)
+    params.require(:flat).permit(
+      :property_type,
+      :price,
+      :bedroom_number,
+      :square_meters,
+      :room_number,
+      :description,
+      :opinion,
+      :bathroom,
+      :wc,
+      :floor,
+      :terrace,
+      :cellar,
+      :transports,
+      :around_description,
+      :environment,
+      :transport,
+      :school,
+      :shop,
+      :bus,
+      :metro,
+      :address,
+      :image,
+      :image_cache)
   end
 end

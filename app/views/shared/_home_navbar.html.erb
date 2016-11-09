@@ -7,12 +7,14 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <%#if  @user.admin %>
-    <%#= link_to "Dashboard", admin_flats_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%# else current_user %>
+    <% if user_signed_in? && current_user.admin %>
+    <%= link_to "Dashboard", admin_flats_path, class: "navbar-wagon-item navbar-wagon-link-admin " %>
+     <i class="fa fa-phone" aria-hidden="true" style="color: white; font-size: 15px;"><span class="fix-font">   +33 1 43 06 04 00</span> </i>
+    <%= link_to "Qui sommes nous ?", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <% else %>
     <i class="fa fa-phone" aria-hidden="true" style="color: white; font-size: 15px;"><span class="fix-font">   +33 1 43 06 04 00</span> </i>
     <%= link_to "Qui sommes nous ?", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%# end %>
+    <% end %>
   </div>
 
 

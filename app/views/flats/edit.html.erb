@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 contact-background-box text-center">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+      <h1>Photo Uploader</h1>
+      <div class="card-form">
+        <br>
+        <br>
+        <%= simple_form_for(@flat) do |f| %>
+          <%= f.input  :property_type%>
+          <%= f.input  :price %>
+          <%= f.input  :bedroom_number%>
+          <%= f.input  :image %>
+          <%= f.input  :image_cache, as: :hidden %>
+          <%= f.submit %>
+          <br>
+        <% end %>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
