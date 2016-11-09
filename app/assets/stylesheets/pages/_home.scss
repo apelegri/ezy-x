@@ -39,3 +39,19 @@
   margin-bottom: 40px;
 }
 
+.map-box {
+  height: 100px;
+  width: 200px;
+}
+
+@media screen and (max-width: 830px) and (min-width: 540px) {
+  .box-style h4 {
+  font-weight: bold;
+  margin-top: 33px;
+  }
+
+  .box-style {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}

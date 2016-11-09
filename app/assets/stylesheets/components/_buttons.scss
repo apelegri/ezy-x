@@ -143,3 +143,23 @@ input[type=submit] {
   font-size: 25px;
   font-size: 20px;
 }
+.btn-map-box {
+  background: $black;
+  color: $white;
+  font-weight: lighter;
+  height: 30px;
+  border-radius: 5px 5px 5px 5px;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+.btn-map-box:hover {
+  text-decoration: none;
+  color: $black;
+  background: $white;
+  font-weight: bold;
+}
