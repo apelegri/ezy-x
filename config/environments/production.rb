@@ -96,6 +96,6 @@ ActionMailer::Base.smtp_settings = {
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer_url_options = { host: 'https://ezi-x.herokuapp.com/'}
+  config.action_mailer_url_options = { host: 'https://ezy-x.herokuapp.com/'}
   config.action_mailer.delivery_method = :smtp
 end
