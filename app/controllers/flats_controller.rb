@@ -7,8 +7,8 @@ class FlatsController < ApplicationController
   end
 
   def show
-    @flats = Flat.where.not(latitude: nil, longitude: nil)
-    @hash = Gmaps4rails.build_markers(@flats) do |flat, marker|
+    @flat = Flat.where.not(latitude: nil, longitude: nil)
+    @hash = Gmaps4rails.build_markers(@flat.find(params[:id])) do |flat, marker|
       marker.lat flat.latitude
       marker.lng flat.longitude
       # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
@@ -48,7 +48,7 @@ class FlatsController < ApplicationController
   private
 
   def set_flat
-    @flat = Flat.find(params[:id])
+    @flat_id = Flat.find(params[:id])
   end
 
   def flat_params
