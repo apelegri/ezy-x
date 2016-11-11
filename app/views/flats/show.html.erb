@@ -37,8 +37,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" id='gradient' role="listbox">
           <div class="item active">
-            <%#= image_tag @flat.image, height: 300, width: 400, crop: :fill %>
-
+            <%= image_tag @flat.image, height: 300, width: 400, crop: :fill %>
           </div>
           <div class="item">
             <%= image_tag("home-chair.jpg", :alt => "home-chair") %>

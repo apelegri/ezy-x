@@ -39,6 +39,7 @@ gem 'carrierwave'
 
 
 
+
 # Frontend Gem
 gem "bootstrap-sass"
 gem "font-awesome-sass"

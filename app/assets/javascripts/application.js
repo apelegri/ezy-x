@@ -16,6 +16,5 @@
 //= require plugin
 //= require underscore
 //= require gmaps/google
-
 //= require ./cable
 
