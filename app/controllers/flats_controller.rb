@@ -35,7 +35,7 @@ class FlatsController < ApplicationController
             @flat_id.images.create(image: image)
           end
         end
-        format.html { redirect_to @flat_id, notice: 'flat_id was successfully updated.' }
+        format.html { redirect_to @flat_id, notice: 'Photos was successfully uploaded.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

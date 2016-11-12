@@ -79,6 +79,14 @@
     padding-right: 20px;
     padding-left: 1px;
   }
+ .type-title h3 {
+    font-size: 14px;
+    top: 13px
+  }
+  .flat-price {
+    font-size: 20px;
+    top: 15px;
+  }
 }
 @media screen and (max-width: 994px) and (min-width: 727px){
   .flat-card {
@@ -94,10 +102,10 @@
     font-size: 12px;
   }
   .type-title h3 {
-    font-size: 17px;
+    font-size: 14px;
   }
   .flat-price {
-    top: 17px;
+    top: 14px;
     font-size: 17px;
   }
   .flat-description {
@@ -107,6 +115,13 @@
   .flat-list {
     margin-left: -78px;
     margin-top: -12px;
+  }
+  .dp-content h3 {
+    font-size: 19px;
+  }
+  .flat-price {
+    font-size: 20px;
+    top: 15px;
   }
 }
 @media screen and (max-width: 726px) and (min-width: 630px){
@@ -123,11 +138,11 @@
     font-size: 9px;
   }
   .type-title h3 {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 15px;
   }
   .flat-price {
-        font-size: 15px;
+    font-size: 12px;
     top: 13px;
   }
   .flat-description {
@@ -161,6 +176,13 @@
     height: 25px;
     width: 40px;
   }
+  .dp-content h3 {
+    font-size: 19px;
+  }
+  .flat-price {
+    font-size: 20px;
+    top: 15px;
+  }
 }
 @media screen and (max-width: 630px) and (min-width: 540px){
   .flat-card {
@@ -176,7 +198,7 @@
     font-size: 7px;
   }
   .type-title h3 {
-    font-size: 11px;
+    font-size: 10px;
     margin-left: 0px;
     margin-top: 11px;
   }
@@ -231,12 +253,12 @@
     font-size: 7px;
   }
   .type-title h3 {
-    font-size: 10px;
+    font-size: 8px;
     margin-left: 2px;
     margin-top: 11px;
   }
   .flat-price {
-    font-size: 10px;
+    font-size: 8px;
     top: 10px;
   }
   .flat-description {
@@ -291,13 +313,13 @@
     font-size: 5px;
   }
   .type-title h3 {
-    font-size: 8px;
+    font-size: 7px;
     margin-left: 2px;
     margin-top: 11px;
   }
   .flat-price {
-    font-size: 8px;
-    top: 10px;
+    font-size: 5px;
+    top: 11px;
   }
   .flat-description {
     font-size: 7px;
