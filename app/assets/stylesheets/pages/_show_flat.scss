@@ -10,6 +10,9 @@
   padding-left: 15px;
   padding-top: 3px;
 }
+.wrapper-description {
+  margin-top: 25px;
+}
 
 // Descriptrion
 .flat-pic-show {
@@ -78,10 +81,10 @@
 // Caroussel
 .carousel {
   width:100%;
-  height:600px;
+  // height:600px;
 }
 .carousel-inner {
-  max-height: 600px;
+ max-height: 600px;
 }
 .carousel-inner > .item > img {
   margin: 0 auto;

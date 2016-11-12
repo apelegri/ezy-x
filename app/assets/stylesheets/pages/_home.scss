@@ -6,6 +6,7 @@
 // Second part of the Home
 .background-style {
   background-color: $light-grey;
+  margin-top: 5px;
 }
 .background-style h1 {
   margin-top: 0px !important;
@@ -53,5 +54,112 @@
   .box-style {
     margin-top: 25px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 450px) and (min-width: 400px){
+  .background-style {
+    margin-top: -435px;
+  }
+  .background-style h1 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 450px){
+  .background-style {
+    margin-top: -400px;
+  }
+  .background-style h1 {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 500px){
+  .background-style {
+    margin-top: -363px;
+  }
+  .background-style h1 {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 550px){
+  .background-style {
+    margin-top: -338px;
+  }
+  .background-style h1 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 600px){
+  .background-style {
+    margin-top:  -298px;
+  }
+  .background-style h1 {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 650px){
+  .background-style {
+    margin-top: -268px;
+  }
+  .background-style h1 {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 700px){
+  .background-style {
+    margin-top: -233px;
+  }
+  .background-style h1 {
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 750px){
+  .background-style {
+    margin-top: -206px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 850px) and (min-width: 800px){
+  .background-style {
+    margin-top: -167px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 850px){
+  .background-style {
+    margin-top: -146px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 900px){
+  .background-style {
+    margin-top: -99px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 950px){
+  .background-style {
+    margin-top: -76px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 1050px) and (min-width: 1000px){
+  .background-style {
+    margin-top: -44px;
+  }
+  .background-style h1 {
+    padding-top: 55px;
   }
 }

@@ -18,7 +18,8 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # end
 
   version :standard do
-    resize_to_fit 800, 600
+    resize_to_fit 600, 400
+
   end
 
   version :bright_face do
