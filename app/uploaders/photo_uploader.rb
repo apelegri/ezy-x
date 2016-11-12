@@ -7,15 +7,15 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
   include Cloudinary::CarrierWave
   # Choose what kind of storage to use for this uploader:
-  storage :file
-  # storage :fog
-  process convert: 'jpg'
-  process eager: true
-  # Override the directory where uploaded files will be stored.
-  # This is a sensible default for uploaders that are meant to be mounted:
-  def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
+  # storage :file
+  # # storage :fog
+  # process convert: 'jpg'
+  # process eager: true
+  # # Override the directory where uploaded files will be stored.
+  # # This is a sensible default for uploaders that are meant to be mounted:
+  # def store_dir
+  #   "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  # end
 
   version :standard do
     resize_to_fit 800, 600

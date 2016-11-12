@@ -36,15 +36,17 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" id='gradient' role="listbox">
+        <% @flat_id.images.each do |image| %>
           <div class="item active">
-            <%#= image_tag @flat_id.image, height: 300, width: 400, crop: :fill %>
+          <%= image_tag image.image_url(:standard) %>
           </div>
           <div class="item">
-            <%= image_tag("home-chair.jpg", :alt => "home-chair") %>
+            <%= image_tag image.image_url(:standard) %>
           </div>
           <div class="item">
-            <%= image_tag("home-salon.jpg", :alt => "home-salon") %>
+            <%= image_tag image.image_url(:standard) %>
           </div>
+        <% end %>
         </div>
          <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

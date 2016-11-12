@@ -17,6 +17,7 @@ class FlatsController < ApplicationController
 
   def new
     @flat = Flat.new.user_id
+    @image = @flat_id.images.build
   end
 
   def create
@@ -24,20 +25,22 @@ class FlatsController < ApplicationController
   end
 
   def edit
-     #@flat = Flat.new flat_params
   end
 
   def update
-    #@flat.update flat_params
-    if current_user.admin
-      if @flat.update(flat_params)
-        redirect_to @flat
+    respond_to do |format|
+      if @flat_id.update(flat_params)
+        if params[:images]
+          params[:images].each do |image|
+            @flat_id.images.create(image: image)
+          end
+        end
+        format.html { redirect_to @flat_id, notice: 'flat_id was successfully updated.' }
+        format.json { head :no_content }
       else
-        render 'edit'
+        format.html { render action: 'edit' }
+        format.json { render json: @flat_id.errors, status: :unprocessable_entity }
       end
-    else
-      flash[:alert] = "Action impossible, vous n'etes pas administrateur de ce site"
-      redirect_to cocktails_path
     end
   end
 
@@ -52,7 +55,7 @@ class FlatsController < ApplicationController
   end
 
   def flat_params
-    params.require(:flat).permit(
+    params.permit(
       :property_type,
       :price,
       :bedroom_number,
@@ -74,7 +77,6 @@ class FlatsController < ApplicationController
       :bus,
       :metro,
       :address,
-      :image,
-      :image_cache)
+      images_attributes: [:image, :flat_id])
   end
 end

@@ -6,12 +6,13 @@
       <div class="card-form">
         <br>
         <br>
-        <%= simple_form_for(@flat) do |f| %>
-          <%= f.input  :property_type%>
-          <%= f.input  :price %>
-          <%= f.input  :bedroom_number%>
-          <%= f.input  :image %>
-          <%= f.input  :image_cache, as: :hidden %>
+        <%= form_for(@flat_id, :html => { multipart: true }) do |f| %>
+          <%= f.fields_for :image do |ff| %>
+              <div class="field">
+                <%= ff.label :image %><br>
+                <%= ff.file_field :image, multiple: true, name: "images[]" %>
+              </div>
+            <% end %>
           <%= f.submit %>
           <br>
         <% end %>

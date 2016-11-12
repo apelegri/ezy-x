@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161111065603) do
+ActiveRecord::Schema.define(version: 20161112065711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,13 +49,6 @@ ActiveRecord::Schema.define(version: 20161111065603) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "flat_images", force: :cascade do |t|
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.string   "images",     default: [],              array: true
-    t.integer  "flat_id"
-  end
-
   create_table "flats", force: :cascade do |t|
     t.string   "property_type"
     t.string   "price"
@@ -82,6 +75,13 @@ ActiveRecord::Schema.define(version: 20161111065603) do
     t.float    "longitude"
     t.string   "address"
     t.integer  "user_id"
+    t.string   "image"
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "flat_id"
     t.string   "image"
   end
 
