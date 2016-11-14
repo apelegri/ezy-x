@@ -38,12 +38,12 @@
         <div class="carousel-inner" id='gradient' role="listbox">
         <% @flat_id.images.each do |image| %>
           <div class="item active">
-          <%= image_tag image.image_url(:standard) %>
+          <%= image_tag image.image_url(:flat_show) %>
 
           </div>
           <div class="item">
 
-            <%= image_tag image.image_url(:standard) %>
+            <%= image_tag image.image_url(:flat_show) %>
 
           </div>
         <% end %>

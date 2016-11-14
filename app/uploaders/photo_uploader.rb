@@ -24,7 +24,11 @@ class PhotoUploader < CarrierWave::Uploader::Base
 
   version :bright_face do
     cloudinary_transformation effect: "brightness:30", radius: 20,
-      width: 150, height: 150, crop: :thumb, gravity: :face
+      width: 150, height: 150, crop: :fit, gravity: :face
+  end
+
+  version :flat_show do
+    cloudinary_transformation :quality=>90, :width=>1218, :crop=>"fit"
   end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
