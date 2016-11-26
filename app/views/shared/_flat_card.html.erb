@@ -2,7 +2,7 @@
   <%= link_to flat_path(flat), class:'card-link-default' do %>
     <div class="row flat-card">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 padding-pic">
-        <div class="flat-pic" style="background-image: url(<%= image_path 'aaabout_pic.jpg' %>);background-color: grey;"></div>
+        <div class="flat-pic" style="background-image: url('<%= asset_url(flat.images.empty? ? "home-chair.jpg" : flat.images.first.image_url(:flat_show)) %>');"></div>
       </div>
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <div class="dp-content">
@@ -30,5 +30,3 @@
     </div>
   <% end %>
 <% end %>
-
-

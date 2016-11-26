@@ -6,7 +6,7 @@
       <div class="card-form">
         <br>
         <br>
-        <%= form_for(@flat_id, :html => { multipart: true }) do |f| %>
+        <%= form_for(@flat, :html => { multipart: true }) do |f| %>
           <%= f.fields_for :image do |ff| %>
               <div class="field">
                 <%= ff.label :image %><br>

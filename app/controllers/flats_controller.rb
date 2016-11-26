@@ -4,15 +4,15 @@ class FlatsController < ApplicationController
 
   def index
     @flats = Flat.all
+    #@leases = Lease.all
   end
 
   def show
-    @flat = Flat.where.not(latitude: nil, longitude: nil)
-    @hash = Gmaps4rails.build_markers(@flat.find(params[:id])) do |flat, marker|
+    @hash = Gmaps4rails.build_markers(@flat) do |flat, marker|
       marker.lat flat.latitude
       marker.lng flat.longitude
       # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
-      end
+    end
   end
 
   def new
@@ -29,17 +29,17 @@ class FlatsController < ApplicationController
 
   def update
     respond_to do |format|
-      if @flat_id.update(flat_params)
+      if @flat.update(flat_params)
         if params[:images]
           params[:images].each do |image|
-            @flat_id.images.create(image: image)
+            @flat.images.create(image: image)
           end
         end
-        format.html { redirect_to @flat_id, notice: 'Photos was successfully uploaded.' }
+        format.html { redirect_to @flat, notice: 'Photos was successfully uploaded.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @flat_id.errors, status: :unprocessable_entity }
+        format.json { render json: @flat.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -51,7 +51,7 @@ class FlatsController < ApplicationController
   private
 
   def set_flat
-    @flat_id = Flat.find(params[:id])
+    @flat = Flat.find(params[:id])
   end
 
   def flat_params

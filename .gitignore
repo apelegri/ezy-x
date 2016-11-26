@@ -16,11 +16,10 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.DS_Store
 
 # Ignore Byebug command history file.
 .byebug_history
-sendgrid.env
 
 # Ignore application configuration
-/config/application.yml
-sendgrid.env
+config/application.yml
