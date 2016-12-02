@@ -36,7 +36,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" id='gradient' role="listbox">
           <% @flat.images.each_with_index do |image, index| %>
-            <div class="item <%= index == 0 ? "active" : "" %>" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= asset_url image.image_url(:flat_show) %>');background-size: cover;background-position:center center;height:600px;">
+            <div class="item <%= index == 0 ? "active" : "" %>" style="background-image:url('<%= asset_url image.image_url(:flat_show) %>');background-size: cover;background-position:center center;height:600px;">
             </div>
           <% end %>
         </div>
