@@ -22,7 +22,7 @@
             <p style="font-weight: bold; text-align: left; margin-top: 15px">Message:</p>
             <%= f.text_area :message, :as => :text, placeholder: "Recherche un appartement dans le 3ème avec vue sur parc...", label: false, :required => true %>
             <div class= "hidden">
-              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+              <%#= f.text_field :nickname, :hint => 'Leave this field blank!' %>
             </div>
               </br>
               <%= f.submit 'ENVOYER', class: "pages-cta-light-form" %>
