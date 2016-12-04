@@ -7,7 +7,7 @@ class ContactMailer < ApplicationMailer
   #
   def welcome(contact)
    @contact = contact
-   mail(to: 'adrienpelegri@yahoo.fr',
+   mail(to: 'contact@ezi-x.com',
         subject: 'EZI-X Contcat Website')
   end
 end
